@@ -1,5 +1,3 @@
-/* CSS Reference from W3School: https://www.w3schools.com/cssref/ */
-
 /* Example Variables */
 :root {
 	/* Fonts */
@@ -17,10 +15,6 @@
 	--main-color-light3: #a0d3f2;
 	--main-color-dark3: #769bb3;
 }
-
-/* Extra small devices (portrait phones, less than 576px)
-No media query for `xs` since this is the default in Bootstrap */
-
 
 /* ======= Header ======= */
 .header {
@@ -53,34 +47,6 @@ No media query for `xs` since this is the default in Bootstrap */
   margin-top: 0;
   margin-bottom: 15px;
 }
-
-/*
-.header .profile-content .social a {
-  background: #b0b7bf;
-  width: 36px;
-  height: 36px;
-  display: inline-block;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  color: #fff;
-  text-align: center;
-}
-
-.header .profile-content .social a:hover {
-  background: #778492;
-}
-
-.header .profile-content .social a .svg-inline--fa {
-  font-size: 20px;
-  margin-top: 8px;
-}
-*/
 
 /* ======= Sections======= */
 .sections-wrapper {
@@ -137,205 +103,22 @@ body {
     background-color:  var(--main-color-white);
 }
 
-/* Section - Landing Page */
 
-/*
-#sec_lan,
-#sec_nav,
-#sec_abo,
-#sec_exp,
-#sec_edu,
-#sec_ski,
-#sec_con {
-	height: 200vh;
-	background-color: var(--main-color-white);
-}
-*/
-
-/*
-#sec_nav {
-    background-color: var(--main-color-light);
-}
-*/
-
-#sec_lan_header h1,
-#sec_lan_header span,
-#sec_lan_sec1 h2,
-#sec_lan_sec1 span {
-	display: none;
-}
-
-/* unvisited link */
-#sec_lan a:link {
-	color: var(--main-color-light2);
-}
-
-/* visited link */
-#sec_lan a:visited {
-	color: var(--main-color-light2);
-}
-
-/* mouse over link */
-#sec_lan a:hover {
-	color: var(--main-color-dark2);
-}
-
-/* selected link */
-#sec_lan a:active {
-	color: var(--main-color-dark2);
-}
-
-/* unvisited link */
-#sec_lan a.btn-primary:link {
-	color: var(--main-color-white);
-	background-color: var(--main-color-light2);
-	border-color: var(--main-color-light2);
-	box-shadow: none;
-}
-
-/* visited link */
-#sec_lan a.btn-primary:visited {
-	color: var(--main-color-white);
-	background-color: var(--main-color-light2);
-	border-color: var(--main-color-light2);
-	box-shadow: none;
-}
-
-/* mouse over link */
-#sec_lan a.btn-primary:hover {
-	color: var(--main-color-white);
-	background-color: var(--main-color-dark2);
-	border-color: var(--main-color-dark2);
-	box-shadow: none;
-}
-
-/* selected link */
-#sec_lan a.btn-primary:active {
-	color: var(--main-color-white);
-	background-color: var(--main-color-dark2);
-	border-color: var(--main-color-dark2);
-	box-shadow: none;
-}
-
-/* About Section */
-/* Latest Section */
-.latest .item {
-  margin-bottom: 30px;
-}
-
-.latest .item .title {
-  font-size: 18px;
-  margin-top: 0;
-}
-
-.latest .item .title .label {
-  margin-left: 5px;
-  font-size: 12px;
-}
-
-.latest .item .title a {
-  color: #778492;
-}
-
-.latest .item .title a:hover {
-  color: #5f6b77;
-}
-
-.latest .item .project-image:hover {
-  -webkit-opacity: 0.8;
-  -moz-opacity: 0.8;
-  opacity: 0.8;
-}
-
-.latest .divider {
-  margin-bottom: 60px;
-}
-
-.latest .featured {
-  margin-bottom: 60px;
-}
-
-.latest .featured .title {
-  font-size: 20px;
-  margin-bottom: 5px;
-  font-size: 20px;
-}
-
-.latest .featured .summary {
-  margin-bottom: 30px;
-  color: #778492;
-}
-
-.latest .featured img {
-  margin-bottom: 30px;
-}
-
-.latest .featured .desc {
-  margin-bottom: 30px;
-}
-
-.latest .has-ribbon {
-  position: relative;
-  display: inline-block;
-}
-
-.latest .has-ribbon .text {
-  background: #3AAA64;
-  color: #fff;
-}
-
-.latest .has-ribbon .ribbon {
-  position: absolute;
-  top: -4px;
-  right: -4px;
-  width: 110px;
-  height: 110px;
-  overflow: hidden;
-}
-
-.latest .has-ribbon .ribbon .text {
-  font-family: 'Montserrat', sans-serif;
-  position: relative;
-  left: -8px;
-  top: 18px;
-  width: 158px;
-  padding: 10px 10px;
-  font-size: 15px;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: #479FC8;
-  -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
-  -moz-transform: rotate(45deg) translate3d(0, 0, 0);
-  -ms-transform: rotate(45deg) translate3d(0, 0, 0);
-  -o-transform: rotate(45deg) translate3d(0, 0, 0);
-}
-
-.latest .has-ribbon .ribbon .text:before, .latest .has-ribbon .ribbon .text:after {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  border-top: 5px solid #276582;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-}
-
-.latest .has-ribbon .ribbon .text:before {
-  left: 0;
-}
-
-.latest .has-ribbon .ribbon .text:after {
-  right: 0;
-}
 
 /* Projects Section */
 .projects .item {
   margin-bottom: 30px;
 }
 
-.projects .item .title {
+.projects .item {
   font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+.projects .title {
+  font-size: 20px;
   margin-top: 0;
   margin-bottom: 5px;
   line-height: 1.5;
@@ -354,7 +137,14 @@ body {
   margin-bottom: 30px;
 }
 
-.experience .item .title {
+.experience .title {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+.experience .item  {
   font-size: 16px;
   margin-top: 0;
   margin-bottom: 5px;
@@ -377,32 +167,6 @@ body {
 .experience .item .title .year {
   color: #999;
   font-weight: normal;
-}
-
-/* Git section */
-.github-graph {
-  margin-bottom: 30px;
-}
-
-.github-graph .js-calendar-graph-svg {
-  max-width: 100%;
-}
-
-.github-graph h2 {
-  font-size: 18px;
-}
-
-.ghfeed {
-  height: 500px;
-}
-
-.ghfeed,
-.ghfeed *,
-.ghfeed *:before,
-.ghfeed *:after {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
 }
 
 /* Info Section */
@@ -469,47 +233,6 @@ body {
   top: -1px;
 }
 
-/* Testimonials section */
-.testimonials .item {
-  margin-bottom: 30px;
-}
-
-.testimonials .item:last-child {
-  margin-bottom: 0;
-}
-
-.testimonials .item .quote {
-  color: #666;
-  font-size: 16px;
-  border-left: 5px solid #9fdeb7;
-  padding: 5px 15px;
-  margin-bottom: 15px;
-}
-
-.testimonials .item .quote p {
-  margin-bottom: 0;
-}
-
-.testimonials .item .quote .svg-inline--fa {
-  color: #79d19a;
-  margin-right: 15px;
-}
-
-.testimonials .item .source {
-  font-size: 14px;
-  padding-left: 20px;
-  font-weight: 500;
-}
-
-.testimonials .item .source .name {
-  color: #939ea9;
-  font-weight: 600;
-}
-
-.testimonials .item .source .title {
-  color: #999;
-}
-
 /* Education section */
 .education .item {
   margin-bottom: 30px;
@@ -558,128 +281,9 @@ body {
   color: #79d19a;
 }
 
-/* Blog Section */
-.blog .item {
-  margin-bottom: 30px;
-}
-
-.blog .item .title {
-  font-size: 18px;
-  line-height: 1.3;
-}
-
-.blog .item .title a {
-  color: #778492;
-}
-
-.blog .item .title a:hover {
-  color: #5f6b77;
-}
-
-.blog .item p {
-  margin-bottom: 5px;
-}
-
-.blog .item:last-child {
-  margin-bottom: 0;
-}
-
-/* List section */
-.list ul li {
-  margin-bottom: 10px;
-}
-
-.list ul li .svg-inline--fa {
-  margin-right: 5px;
-}
-
-.list ul li a {
-  color: #778492;
-}
-
-.list ul li a:hover {
-  color: #49515a;
-}
-
-/* Credits */
-.credits ul li {
-  margin-bottom: 10px;
-}
-
-.credits ul li .svg-inline--fa {
-  margin-right: 5px;
-  position: relative;
-  top: -2px;
-}
-
-.credits ul li a {
-  color: #778492;
-}
-
-.credits ul li a .svg-inline--fa {
-  color: #b0b7bf;
-}
-
-.credits ul li a:hover {
-  color: #49515a;
-}
-
-.credits .btn {
-  margin-bottom: 15px;
-}
-
-.aside .subheading {
-  font-size: 18px;
-  color: #545e69;
-}
-
-/* ======= Footer ======= */
-.footer {
-  background: #32383e;
-  color: #fff;
-  padding: 10px 0;
-}
-
-.footer .copyright {
-  line-height: 1.6;
-  color: #a1aab4;
-  font-size: 14px;
-}
-
-.footer a {
-  color: #fff;
-}
-
-.footer .fa-heart {
-  color: #fb866a;
-}
 
 
-@media (max-width: 767.98px) {
-  .header {
-    text-align: center;
-  }
-  .header .profile-image {
-    float: none !important;
-    margin: 0 auto;
-  }
-  .header .profile-content {
-    float: none !important;
-    text-align: center;
-  }
-  .header .btn {
-    margin-top: 30px;
-    float: none !important;
-  }
-  .project-image {
-    margin-bottom: 15px;
-  }
-}
 
-@media (min-width: 1400px) {
-  .container {
-    width: 1360px;
-    max-width: inherit;
-  }
-}
+
+
 
